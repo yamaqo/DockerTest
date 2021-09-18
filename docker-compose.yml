@@ -1,0 +1,36 @@
+version: "3"
+services:
+  alpine:
+    build: ./dockerfiles/alpine
+    tty: true
+  centos:
+    build: ./dockerfiles/centos
+    tty: true
+  debian-bullseye:
+    build: ./dockerfiles/debian/bullseye
+    tty: true
+  debian-buster:
+    build: ./dockerfiles/debian/buster
+    tty: true
+  ubuntu:
+    build: ./dockerfiles/ubuntu
+    tty: true
+    privileged: true
+  go:
+    build: ./dockerfiles/go
+    tty: true
+  php:
+    build: ./dockerfiles/php
+    tty: true
+  ruby:
+    build: ./dockerfiles/ruby
+    tty: true
+  python:
+    build: ./dockerfiles/python
+    tty: true
+  rust:
+    build: ./dockerfiles/rust
+    tty: true
+  nginx:
+    build: ./dockerfiles/nginx
+    tty: true
